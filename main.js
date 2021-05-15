@@ -27,6 +27,9 @@
 //   menuToggle.classList.toggle('active');
 // }
 
+const btnviewmore = document.querySelector('#btnview');
+const menu = document.querySelector('.menu__box');
+
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml9 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -46,7 +49,22 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
-  
+
+//for button view more
+btnviewmore.addEventListener('click', function () {
+    console.log('yay button is working');
+    if (menu.classList.contains('disp')) {//close 
+        menu.classList.remove('disp');
+        document.getElementById("btnview").innerHTML = "Show Less";
+/*        menu.classList.add('fade-out');
+        menu.classList.remove('fade-in');*/
+    } else {
+        menu.classList.add('disp');
+        document.getElementById("btnview").innerHTML = "Show More";
+        /*menu.classList.add('fade-in');
+        mneu.classList.remove('fade-out');*/
+    }
+})
 
 
 

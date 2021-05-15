@@ -269,6 +269,21 @@ section{
     object-fit: cover;
 }
 
+/* image hover zoom */
+
+/* Brightness-zoom Container */
+.row .col50 .imgBx .img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(50%);
+  }
+  
+  /* The Transformation */
+  .row .col50 .imgBx .img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(1.3);
+  }
+  /* ///// */
 
 .title{
     width: 100%;
@@ -281,6 +296,7 @@ section{
 
 /* for menu content*/
 .menu .content{
+    opacity:1;
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
@@ -315,6 +331,21 @@ section{
     height: 100%;
     object-fit: cover;
 }
+
+
+/* image hover zoom */
+
+/* Quick-zoom Container */
+.menu .box .imgBx .img-hover-zoom--quick-zoom img {
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+  }
+  
+  /* The Transformation */
+  .menu .box .imgBx .img-hover-zoom--quick-zoom:hover img {
+    transform: scale(1.2);
+  }
+  /* ///// */
 
  .menu .content .box .text{
     padding: 15px 0 5px;
@@ -364,6 +395,92 @@ section{
     font-weight: 400;
     color: #111;
 }
+
+/* image hover */
+
+
+/* Brightness-zoom Container */
+.expert .content .box .imgBx .img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(50%);
+  }
+  
+  /* The Transformation */
+  .expert .content .box .imgBx .img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(1.3);
+  }
+  /* ///// */
+
+
+
+
+/* animation start */
+.expert .content .box .imgBx  .caption-style-1{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    
+}
+
+.expert .content .box .imgBx .expert .content .box .imgBx .caption-style-1 li{
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.expert .content .box .imgBx  .caption-style-1 li:hover .caption{
+    opacity: 1;
+
+}
+
+
+.expert .content .box .imgBx .caption-style-1 img{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+}
+
+
+.expert .content .box .imgBx  .caption-style-1 .caption{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition:all 0.45s ease-in-out;
+    -moz-transition:all 0.45s ease-in-out;
+    -o-transition:all 0.45s ease-in-out;
+    -ms-transition:all 0.45s ease-in-out;
+    transition:all 0.45s ease-in-out;
+
+}
+.expert .content .box .imgBx  .caption-style-1 .blur{
+    background-color: rgba(0,0,0,0.65);
+    height: 300px;
+    width: 250px;
+    z-index: 5;
+    position: absolute;
+}
+
+.expert .content .box .imgBx  .caption-style-1 .caption-text h1{
+    text-transform: uppercase;
+    font-size: 24px;
+   
+    
+}
+.expert .content .box .imgBx  .caption-style-1 .caption-text{
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    top:100px;
+}
+  /* //over */
 /* for testimonials */
 
 .testimonials{
@@ -534,3 +651,59 @@ background-size: cover;
 
     }
 } */
+    
+/**.menu .content*/
+.menu .content.disp > div:nth-child(2n+1) {
+    
+    display: none;
+}
+
+/*Liknk below food category*/
+#foodlink, #foodlink:visited, #foodlink:hover {
+    text-decoration: none;
+}
+
+
+/*animation of menu content*/
+/* } */
+
+/*@keyframes fade-in {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in 300ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    99% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fade-out 300ms ease-in-out forwards;
+}*/
