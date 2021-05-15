@@ -1,17 +1,4 @@
-    <?php
-    $jsondata = '';
-    $siteloc = "https://www.themealdb.com/api/json/v1/1/categories.php";
-    //testing for connection to website
-    if (@fsockopen('www.themealdb.com', 80)) {
-        $start = fopen($siteloc, "r");
-        $rawdata = stream_get_contents($start);
-        fclose($start);
-        $jsondata = json_decode($rawdata);
-    } else {
-        //Put a alert
-        echo "Not able to connect!";
-    }
-    ?>
+
 
     <!DOCTYPE html>
     <html lang="en">
