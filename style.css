@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+/* {
+    font-family: 'Poppins', sans-serif;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-weight: 300;
+  color: #111;
+}
+/* body{
+    min-height: 1000px;
+} */
+
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0; 
+    width: 100%;
+     /* min-width: 100%; 
+    min-height: 100%; */
+  }
+
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-sizing: border-box; */
+  background: url(img/sl3.jpg);
+  /* background: url(img/vd1.mp4); */
+  background-size: cover;
+}
+
+
+
+  
+ 
+/* w3school slides */
+
+
+/* slides */
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 5em;
+    color: #fff;
+}
+
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+
+/* .butn{
+    padding: 10px 30px;
+    margin-top: 20px;
+
+} */
+
+
+/* text */
+
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+    /* color: #ff0157; */
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-size: 1em;
+    font-weight: 500;
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+    
+/* //// */
+.search-container {
+    position: relative;
+  }
+
+  input[type=text] {
+      /* margin-bottom: 216px; */
+    padding: 12px 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 10px;
+    width: 800px;
+  }
+
+  /* Style the submit button */
+  .search-container button {
+    /* float: right; */
+    position: absolute;
+    margin-top: 8px;
+    width: 12%;
+    padding: 12px 6px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background: #bbb;
+  }
+/* ////// */
+
+  
+  
+  
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+
+/* for button hower */
+
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+/* header which is sticky */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
+}
+
+/* "food" logo */
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/* making logo sticky */
+
+header.sticky .logo{
+    color: #111;
+
+}
+
+header .logo span{
+    color: #ff0157;
+
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* color changed to black of nav when we scroll */
+header.sticky .navigation li a{
+    color: #111;
+}
+
+/* nav stikcy */
+header .navigation li a:hover{
+    color: #ff0157;
+}
+
+section{
+    padding: 100px;
+}
+
+
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+
+.titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    /* min-height: 300px; */
+    height: 100%;
+}
+
+.row .col50 .imgBx img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* for menu content*/
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0,0.08);
+}
+
+/* for our menu img box */
+
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+}
+
+/* for our menu image */
+
+.menu .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ .menu .content .box .text{
+    padding: 15px 0 5px;
+}
+
+
+.menu .content .box h3{
+    font-weight: 400;
+    color: #111;
+}
+
+/* for keep in middle of page */
+.expert .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.expert .content .box{
+    width: 250px;
+    margin: 15px;
+
+}
+
+.expert .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.expert .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.expert .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+/* for testimonials */
+
+.testimonials{
+background: url(img/bg2.jpg);
+background-size: cover;
+}
+
+.white .titleText,
+.white p{
+    color: #fff;
+}
+
+.testimonials .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.testimonials .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials .content .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.testimonials .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials .content .box  .text{
+    text-align: center;
+}
+ 
+.testimonials .content .box .text p{
+    color: #666;
+    font-style: italic;
+}
+
+.testimonials .content .box .text h3{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight: 600;
+}
+
+/* for contact */
+
+.contact{
+    background: url(img/bg3.jpg);
+    background-size: cover;
+}
+
+.contactForm{
+    padding: 75px 50px;
+    background: #fffb;
+    box-shadow: 0 15 50px rgba(0,0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50x;
+}
+
+.contactForm h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font: 300px;
+    resize: none;
+}
+
+.contactForm .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5px;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0,0.1);
+    text-align: center;
+}
+
+.copyrightText p{
+    color: #333;
+}
+
+.copyrightText a{
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 991px)
+{
+    header,header.sticky{
+        padding: 10px20px;
+    }
+    header .navigation{
+        display: none;
+    }
+/* 
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer; */
+    }
+
+    /* .menuToggle.active{
+        background: url(img/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sicky .menuToggle{
+
+    }
+} */
