@@ -36,32 +36,21 @@ p {
   justify-content: center;
   align-items: center;
   /* box-sizing: border-box; */
-  background: url(img/sl3.jpg);
+  background: url(img/bg5.jpg);
   /* background: url(img/vd1.mp4); */
   background-size: cover;
 }
 
 
-
-  
+.banner .content{
+    position: center;
+    padding-left: 50px;
+}
  
 /* w3school slides */
 
 
 /* slides */
-.banner .content {
-    max-width: 900px;
-    text-align: center;
-}
-.banner .content h2{
-    font-size: 5em;
-    color: #fff;
-}
-
-.banner .content p{
-    font-size: 1em;
-    color: #fff;
-}
 
 /* .butn{
     padding: 10px 30px;
@@ -223,6 +212,7 @@ header .navigation li a:hover{
     color: #ff0157;
 }
 
+
 section{
     padding: 100px;
 }
@@ -293,6 +283,8 @@ section{
     flex-direction: column;
 
 }
+/* for scond page */
+
 
 /* for menu content*/
 .menu .content{
@@ -707,3 +699,4 @@ background-size: cover;
 .fade-out {
     animation: fade-out 300ms ease-in-out forwards;
 }*/
+/* footer */

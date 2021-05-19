@@ -68,9 +68,4 @@ btnviewmore.addEventListener('click', function () {
 
 
 
-
-
-
-
-
-  
+// contact form//

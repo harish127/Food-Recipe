@@ -33,7 +33,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <title>Food</title>
 
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style-sec.css" />
         <!-- Load icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -41,6 +41,7 @@
     <body>
 
         <header>
+       
             <a href="#" class="logo">Food<span>.</span></a>
             <ul class="navigation">
                 <li>
@@ -62,15 +63,24 @@
                     <a href="./index.php#contact">Contact</a>
                 </li>
             </ul>
+            
         </header>
+        <!-- <video autoplay muted loop id="myVideo">
+          <source src="img/vd3.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video> -->
 
-        <div style="height:600px;">
+        
+        <section class="banner" id="banner" data-aos="zoom-out-up" data-aos-duration="2500">
+            <div class="content">
+                
+        <div style="height:200px;">
         <?php
         if($alert){
         echo'
           <section class="contact" id="contact">
             <div class="title">
-                <h2 class="titleText">Your <span>C</span>ontact Us Form Submission is Sucessful!</h2>
+                <h2 class="titleText">Your <span>C</span>ontact Us Form Sucessfully Submitted!</h2>
                 <p>We have recived your request sucessfully, <a style="text-decoration:none;" href="./index.php">Click Here</a> to go back to Homepage.</p>
         </section>';
         }else {
@@ -83,11 +93,19 @@
         }
         ?>
         </div>
+        </section>
+
          <footer>
         <!-- for copyright -->
         <div class="copyrightText">
             <p>Copyright 2021 <a href="#">Institute Of Technolgy Korba</a>.All right Reserved</p>
         </div>
+            
+                    </div>
+
+
+     
+
 
          </footer>
         
