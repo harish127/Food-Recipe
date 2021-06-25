@@ -1,9 +1,10 @@
- <?php
+<!-- do not edit --> 
+<?php
     $alert=false;
     $jsondata="";
-    if(!empty($_GET["v"])){
-    $querry = $_GET["v"];
-    $start= fopen("https://www.themealdb.com/api/json/v1/1/filter.php?c=".$querry." ", "r");
+    if(!empty($_GET["id"])){
+    $querry = $_GET["id"];
+    $start= fopen("https://www.themealdb.com/api/json/v1/1/lookup.php?i=".$querry." ", "r");
     $rawdata=stream_get_contents($start);
     fclose($start);
     $jsondata = json_decode($rawdata);
@@ -15,7 +16,7 @@
     $alert= true;
     }
     ?>
-
+<!--  php file -->
 
 <!DOCTYPE html>
     <html lang="en">
@@ -64,9 +65,6 @@
 
 
          <section class="banner" id="banner" data-aos="zoom-out-up" data-aos-duration="2500">
-         <h2 >Viewing Catogery <?php echo @$querry; ?> </h2> 
-          <?php
-           echo '<h3>Found '.@count($jsondata->meals).' Recipes</h3>' ;?>
 
 
         </section>
@@ -75,7 +73,7 @@
 
             <div class="title" >
                 <h2 class="titleText"  data-aos="fade-up"
-     data-aos-duration="2500">Our<span>M</span>enu</h2>
+     data-aos-duration="2500">Our <span>M</span>enu</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
@@ -103,13 +101,24 @@
                   </div>';
                     }
                 } else {
-                    echo '<h2>Error Items Not Found <a href="./index.php#menu">Click Here</a> to go back</h2>'; //can be edited
+                    echo '<h2>We found Nothing related to your search term <a href="./index.php#">Click Here</a> to go back</h2>'; //can be edited
                 }
 
                 ?>
 
             </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+
 
          <footer>
         <!-- for copyright -->

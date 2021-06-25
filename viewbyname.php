@@ -1,9 +1,9 @@
  <?php
     $alert=false;
     $jsondata="";
-    if(!empty($_GET["v"])){
-    $querry = $_GET["v"];
-    $start= fopen("https://www.themealdb.com/api/json/v1/1/filter.php?c=".$querry." ", "r");
+    if(!empty($_GET["search"])){
+    $querry = $_GET["search"];
+    $start= fopen("https://www.themealdb.com/api/json/v1/1/search.php?s=".$querry." ", "r");
     $rawdata=stream_get_contents($start);
     fclose($start);
     $jsondata = json_decode($rawdata);
@@ -64,7 +64,7 @@
 
 
          <section class="banner" id="banner" data-aos="zoom-out-up" data-aos-duration="2500">
-         <h2 >Viewing Catogery <?php echo @$querry; ?> </h2> 
+         <h2 >You have Searched <?php echo @$querry; ?> </h2> 
           <?php
            echo '<h3>Found '.@count($jsondata->meals).' Recipes</h3>' ;?>
 
@@ -103,7 +103,7 @@
                   </div>';
                     }
                 } else {
-                    echo '<h2>Error Items Not Found <a href="./index.php#menu">Click Here</a> to go back</h2>'; //can be edited
+                    echo '<h2>We found Nothing related to your search term <a href="./index.php#">Click Here</a> to go back</h2>'; //can be edited
                 }
 
                 ?>

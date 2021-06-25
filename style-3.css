@@ -1,0 +1,219 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+/* {
+    font-family: 'Poppins', sans-serif;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-weight: 300;
+  color: #111;
+}
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing: border-box; */
+    background: url(img/bg4.jpg);
+    /* background: url(img/vd1.mp4); */
+    background-size: cover;
+  }
+  
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
+}
+
+/* "food" logo */
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/* making logo sticky */
+
+header.sticky .logo{
+    color: #111;
+
+}
+
+header .logo span{
+    color: #ff0157;
+
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* color changed to black of nav when we scroll */
+header.sticky .navigation li a{
+    color: #111;
+}
+
+/* nav stikcy */
+header .navigation li a:hover{
+    color: #ff0157;
+}
+
+
+.titleText{
+    color: rgb(32, 27, 27);
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.titleText span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.title p{
+    color: #f3ecef;
+    font-weight: 50;
+    font-size: 1.2em;
+}
+
+
+
+/* for menu content*/
+.menu .content{
+    opacity:1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 35px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0,0.08);
+}
+
+/* for our menu img box */
+
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+}
+
+/* for our menu image */
+
+.menu .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* image hover zoom */
+
+/* Quick-zoom Container */
+.menu .box .imgBx .img-hover-zoom--quick-zoom img {
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+  }
+  
+  /* The Transformation */
+  .menu .box .imgBx .img-hover-zoom--quick-zoom:hover img {
+    transform: scale(1.2);
+  }
+  /* ///// */
+
+ .menu .content .box .text{
+    padding: 15px 0 5px;
+}
+
+
+.menu .content .box h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0,0.1);
+    text-align: center;
+}
+
+.copyrightText p{
+    color: #333;
+}
+
+.copyrightText a{
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+@media (max-width: 991px)
+{
+    header,header.sticky{
+        padding: 10px20px;
+    }
+    header .navigation{
+        display: none;
+    }
+}
+  
