@@ -69,3 +69,11 @@ btnviewmore.addEventListener('click', function () {
 
 
 // contact form//
+function validateForm(){
+  const user = document.getElementById('user').value;   //fetching value
+  if(user == ""){
+    // document.getElementById('username').innerHTML = "please fill the user name";
+  alert("invalid");
+    return false;
+  }
+}

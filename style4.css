@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+/* {
+    font-family: 'Poppins', sans-serif;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-weight: 300;
+  color: #111;
+}
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing: border-box; */
+    background: url(img/bg4.jpg);
+    /* background: url(img/vd1.mp4); */
+    background-size: cover;
+  }
+  
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
+}
+
+/* "food" logo */
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/* making logo sticky */
+
+header.sticky .logo{
+    color: #111;
+
+}
+
+header .logo span{
+    color: #ff0157;
+
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* color changed to black of nav when we scroll */
+header.sticky .navigation li a{
+    color: #111;
+}
+
+/* nav stikcy */
+header .navigation li a:hover{
+    color: #ff0157;
+}
+
+
+.titleText{
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.titleText span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.title p{
+    color: #f3ecef;
+    font-weight: 50;
+    font-size: 1.2em;
+}
+
+
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0,0.1);
+    text-align: center;
+}
+
+.copyrightText p{
+    color: #333;
+}
+
+.copyrightText a{
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+@media (max-width: 991px)
+{
+    header,header.sticky{
+        padding: 10px20px;
+    }
+    header .navigation{
+        display: none;
+    }
+}
+  
+
+
+
+
+/* recipie */
+
+/* [Master Stylesheet v1.0]
+
+- Template Name: Delicious - Food Blog Template
+- Template Author: Colorlib
+- Template URL: colorlib.com
+- Version: 1.0.0
+
+*/
+/* :: 1.0 Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+/* :: 2.0 Import All CSS */
+@import url(css/bootstrap.min.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/animate.css);
+@import url(css/magnific-popup.css);
+@import url(css/font-awesome.min.css);
+@import url(css/custom-icon.css);
+@import url(css/classy-nav.min.css);
+@import url(css/nice-select.min.css);
+/* :: 3.0 Base CSS */
+
+
+/* :: 15.0 Receipe Area */
+.receipe-post-search {
+  position: relative;
+  z-index: 20; }
+  .receipe-post-search form input {
+    width: 100%;
+    height: 60px;
+    background-color: #f3f5f8;
+    font-size: 14px;
+    padding: 0 20px;
+    border: none; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .receipe-post-search .col-12 {
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .receipe-post-search .col-12 {
+      margin-bottom: 15px; } }
+
+
+.receipe-headline span {
+  font-size: 14px;
+  display: block;
+  color: #a4a4a4;
+  margin-bottom: 0; }
+.receipe-headline h2 {
+  font-size: 36px;
+  color: #474747;
+  margin-bottom: 30px; }
+  @media only screen and (max-width: 767px) {
+    .receipe-headline h2 {
+      font-size: 24px; } }
+.receipe-headline .receipe-duration {
+  border-left: 3px solid #40ba37;
+  padding: 15px; }
+  .receipe-headline .receipe-duration h6 {
+    font-size: 15px;
+    margin-bottom: 5px; }
+    .receipe-headline .receipe-duration h6:last-child {
+      margin-bottom: 0; }
+
+.receipe-ratings .ratings {
+  margin-bottom: 30px; }
+.receipe-ratings i {
+  font-size: 18px;
+  color: #fbb710;
+  padding: 0 3px; }
+
+.single-preparation-step {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px; }
+  .single-preparation-step h4 {
+    color: #474747;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    max-width: 60px;
+    width: 60px;
+    margin-bottom: 0; }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ingredients {
+    margin-bottom: 80px; } }
+@media only screen and (max-width: 767px) {
+  .ingredients {
+    margin-bottom: 80px; } }
+.ingredients h4 {
+  color: #474747;
+  margin-bottom: 30px; }
+.ingredients .custom-checkbox .custom-control-label::before {
+  border-radius: 0; }
+.ingredients .custom-control-label::before {
+  width: 30px;
+  height: 30px;
+  background-color: #f3f5f8; }
+.ingredients .custom-control {
+  padding-left: 2.5rem;
+  margin-bottom: 30px;
+  min-height: 35px; }
+.ingredients .custom-control-label {
+  margin-bottom: 0;
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2f2f2f; }
+.ingredients .custom-control-label::after {
+  top: 10px;
+  left: 5px;
+  width: 20px;
+  height: 20px; }
+.ingredients .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #40ba37; }
+
+      
+
+
+
+
+
+        
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+    background: #fffaf3;
+  }
+  
+  .about .content {
+    padding: 0 80px;
+    margin-top: 150px;
+    float: right;
+    display: block;
+  }
+  
+  .about .content h3 {
+    font-weight: 400;
+    font-size: 34px;
+    color: #5f5950;
+  }
+  
+  .about .content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  
+  .about .content p {
+    font-size: 15px;
+    color: #848484;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li + li {
+    margin-top: 15px;
+  }
+  
+  .about .content ul li {
+    position: relative;
+    padding-left: 26px;
+  }
+  
+  .about .content ul i {
+    font-size: 20px;
+    color: #ffb03b;
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .about .video-box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    position: relative;
+  }
+  
+  .about .play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(#ffb03b 50%, rgba(255, 176, 59, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    overflow: hidden;
+  }
+  
+  .about .play-btn::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 100;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .about .play-btn::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate-btn 2s;
+    animation: pulsate-btn 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 176, 59, 0.7);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+  }
+  
+  .about .play-btn:hover::after {
+    border-left: 15px solid #ffb03b;
+    transform: scale(20);
+  }
+  
+  .about .play-btn:hover::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 200;
+    -webkit-animation: none;
+    animation: none;
+    border-radius: 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .about .content, .about .accordion-list {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about .content {
+      padding-top: 30px;
+    }
+    .about .accordion-list {
+      padding-bottom: 30px;
+    }
+  }
+  
+  @-webkit-keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+
+  
+
+
+  /* ///banner */
+
+  
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing: border-box; */
+    background: url(img/bg4.jpg);
+    /* background: url(img/vd1.mp4); */
+    background-size: cover;
+  }
+  
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
+}
+
+/* "food" logo */
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/* making logo sticky */
+
+header.sticky .logo{
+    color: #111;
+
+}
+
+header .logo span{
+    color: #ff0157;
+
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* color changed to black of nav when we scroll */
+header.sticky .navigation li a{
+    color: #111;
+}
+
+/* nav stikcy */
+header .navigation li a:hover{
+    color: #ff0157;
+}
+
